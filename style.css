@@ -435,7 +435,122 @@
     display: none;
   }
 
-    @media (min-width:768px) {
+  /* FOOTER */
+
+
+  .apacia {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #f6f6f6;
+  }
+
+  .footer {
+    background: #f6f6f6;
+    width: 90%;
+    height: auto;
+    padding: 70px 20px;
+    /* padding: 20px; */
+  }
+
+  .forma {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    order: 2;
+  }
+
+  .forma h2 {
+    text-align: left;
+    letter-spacing: 0.35em;
+  }
+
+  form input{
+    margin: 20px 0;
+    background: #f6f6f6;
+    border: none;
+    border-bottom: 1px solid #c9c9c9;
+    font-family: source sans pro;
+    width: 100%;
+  }
+
+  .msg input {
+    padding-bottom: 30px;
+  }
+
+  .footer button {
+    background: #585858;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    letter-spacing: 0.35em;
+    font-family: source sans pro;
+    transition: background-color 0.3s;
+  }
+
+  .forma button h2 {
+    text-align: center;
+  }
+
+  .forma button:hover {
+    background-color: #c75b9b;
+    cursor: pointer;
+  }
+
+  .ikonos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    margin-bottom: 50px;
+  }
+
+  .ikonos h2 {
+    letter-spacing: 0.35em;
+  }
+
+  .icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    width: 85%;
+    gap: 15px;
+    /* display: flex; */
+    /* text-align: center; */
+  }
+
+  .icons h2 {
+    grid-column: 1/6;
+    text-align: left;
+    margin: 20px 0;
+  }
+
+  .icons i {
+    text-align: center;
+    border: 1px solid #585858;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 0 auto;
+    width: 20px;
+    padding: 20px;
+    margin: 5px;
+    transition: 0.3s;
+  }
+
+  .icons i:hover {
+    cursor: pointer;
+    background: #585858;
+    color: white;
+    border:none;
+  }
+
+
+      @media (min-width:768px) {
     .grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -523,112 +638,19 @@
     .item:nth-of-type(12) {
       display: block;
     }
-  }
 
+    .apacia {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: auto;
+      gap: 15px;
+    }
 
+    .apcia > .ikonos {
+      grid-column: 2/3 !important;
+    }
 
-
-  /* FOOTER */
-
-
-  .apacia {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: #f6f6f6;
-  }
-
-  .footer {
-    background: #f6f6f6;
-    width: 90%;
-    height: auto;
-    padding: 70px 20px;
-    /* padding: 20px; */
-  }
-
-  .forma {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-right: 20px;
-    order: 2;
-  }
-
-  .forma h2 {
-    text-align: left;
-    letter-spacing: 0.35em;
-  }
-
-  form input{
-    margin: 20px 0;
-    background: #f6f6f6;
-    border: none;
-    border-bottom: 1px solid #c9c9c9;
-    font-family: source sans pro;
-    width: 100%;
-  }
-
-  .msg input {
-    padding-bottom: 30px;
-  }
-
-  .footer button {
-    background: #585858;
-    color: white;
-    border: none;
-    width: 100%;
-    height: 60px;
-    border-radius: 5px;
-    letter-spacing: 0.35em;
-    font-family: source sans pro;
-  }
-
-  .forma button h2 {
-    text-align: center;
-  }
-
-  .ikonos {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 50px;
-  }
-
-  .ikonos h2 {
-    letter-spacing: 0.35em;
-  }
-
-  .icons {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-auto-rows: auto;
-    width: 85%;
-    gap: 15px;
-    /* display: flex; */
-    /* text-align: center; */
-  }
-
-  .icons h2 {
-    grid-column: 1/6;
-    text-align: left;
-    margin: 20px 0;
-  }
-
-  .icons i {
-    text-align: center;
-    border: 1px solid #585858;
-    border-radius: 5px;
-    font-size: 20px;
-    font-weight: 900;
-    margin: 0 auto;
-    width: 20px;
-    padding: 20px;
-    margin: 5px;
-    transition: color 0.3s;
-  }
-
-  .icons i:hover {
-    cursor: pointer;
-    color: #c75b9b;
-    border:1px solid #c75b9b;
+    .apacia > .forma {
+      grid-row: 1/3 !important;
+    }
   }
