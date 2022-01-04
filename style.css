@@ -531,19 +531,33 @@
   /* FOOTER */
 
 
+  .apacia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #f6f6f6;
+  }
+
   .footer {
     background: #f6f6f6;
-    width: 100%;
+    width: 90%;
     height: auto;
+    padding: 70px 20px;
     /* padding: 20px; */
   }
 
-  .footer h2 {
-    letter-spacing: 0.35em;
+  .forma {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 20px;
+    order: 2;
   }
 
-  form {
-    text-align: center;
+  .forma h2 {
+    text-align: left;
+    letter-spacing: 0.35em;
   }
 
   form input{
@@ -552,7 +566,7 @@
     border: none;
     border-bottom: 1px solid #c9c9c9;
     font-family: source sans pro;
-    width: 85%;
+    width: 100%;
   }
 
   .msg input {
@@ -563,11 +577,25 @@
     background: #585858;
     color: white;
     border: none;
-    width: 85%;
+    width: 100%;
     height: 60px;
     border-radius: 5px;
     letter-spacing: 0.35em;
     font-family: source sans pro;
+  }
+
+  .forma button h2 {
+    text-align: center;
+  }
+
+  .ikonos {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .ikonos h2 {
+    letter-spacing: 0.35em;
   }
 
   .icons {
