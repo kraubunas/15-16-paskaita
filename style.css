@@ -41,6 +41,7 @@
   } */
 
   .item {
+    display: flex;
     margin-bottom: 25px;
   }
 
@@ -58,57 +59,38 @@
     bottom: 0;
     right: 0;
     left: 0;
+    width: 353px;
+    height: 326px;
     border-radius: 5px;
     border-bottom: 0;
     color: white;
     text-align: center;
     text-decoration: none;
-    z-index: 3;
+    transition: 0.3s;
   }
 
-  h2 {
+  .item h2 {
     font-weight: 900;
     font-size: 16px;
     line-height: 1.5;
     text-transform: uppercase;
     letter-spacing: 0.35em;
+    transform: translateY(20px);
   }
 
-  .item h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    transition: 0.3s;
+  .item p {
+    color: white;
+    opacity: 0;
+    width: 80%;
+    margin-top: 20px ;
+    transition: transform 0.3s;
   }
 
-  .item h2:hover {
+  .grid .item a:hover {
+    opacity: 1;
     transform: translateY(-40px);
   }
-
-
-  .grid .item p {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    color: black;
-    transform: translateY(50px);
-    z-index: 2;
-    margin: 0 auto;
-  }
-
-  .grid .item p:hover {
+  .grid .item a:hover p {
     opacity: 1;
   }
 
@@ -123,8 +105,8 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 99%;
+      width: 353px;
+      height: 326px;
       border-radius: 5px;
       background: #f2849e;
       background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 100 100'><path d='M100 0 L0 100 ' stroke='white' stroke-width='0.1'/><path d='M0 0 L100 100 ' stroke='white' stroke-width='0.1'/></svg>");
@@ -133,7 +115,7 @@
   }
 
   .item1:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
   }
 
   .item1:hover::before {
@@ -151,7 +133,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 99%;
+      height: 100%;
       border-radius: 5px;
       background: #7ecaf6;
       background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 100 100'><path d='M100 0 L0 100 ' stroke='white' stroke-width='0.1'/><path d='M0 0 L100 100 ' stroke='white' stroke-width='0.1'/></svg>");
@@ -159,7 +141,7 @@
       opacity: 0.8;
   }
   .item2:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
   }
 
   .item2:hover::before {
@@ -177,7 +159,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 99%;
+      height: 100%;
       border-radius: 5px;
       background: #7bd0c1;
       background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 100 100'><path d='M100 0 L0 100 ' stroke='white' stroke-width='0.1'/><path d='M0 0 L100 100 ' stroke='white' stroke-width='0.1'/></svg>");
@@ -185,7 +167,7 @@
       opacity: 0.8;
   }
   .item3:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
   }
 
   .item3:hover::before {
@@ -203,7 +185,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 99%;
+      height: 100%;
       border-radius: 5px;
       background: #c75b9b;
       background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 100 100'><path d='M100 0 L0 100 ' stroke='white' stroke-width='0.1'/><path d='M0 0 L100 100 ' stroke='white' stroke-width='0.1'/></svg>");
@@ -211,7 +193,7 @@
       opacity: 0.8;
   }
   .item4:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
   }
 
   .item4:hover::before {
@@ -229,7 +211,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 99%;
+      height: 100%;
       border-radius: 5px;
       background: #ae85ca;
       background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 100 100'><path d='M100 0 L0 100 ' stroke='white' stroke-width='0.1'/><path d='M0 0 L100 100 ' stroke='white' stroke-width='0.1'/></svg>");
@@ -237,7 +219,7 @@
       opacity: 0.8;
   }
   .item5:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
   }
 
   .item5:hover::before {
@@ -255,7 +237,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 99%;
+      height: 100%;
       border-radius: 5px;
       background: #8499e7;
       background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 100 100'><path d='M100 0 L0 100 ' stroke='white' stroke-width='0.1'/><path d='M0 0 L100 100 ' stroke='white' stroke-width='0.1'/></svg>");
@@ -263,7 +245,7 @@
       opacity: 0.8;
   }
   .item6:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
   }
 
   .item6:hover::before {
@@ -281,7 +263,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 99%;
+      height: 100%;
       border-radius: 5px;
       background: #7ecaf6;
       background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 100 100'><path d='M100 0 L0 100 ' stroke='white' stroke-width='0.1'/><path d='M0 0 L100 100 ' stroke='white' stroke-width='0.1'/></svg>");
@@ -289,7 +271,7 @@
       opacity: 0.8;
   }
   .item7:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
   }
 
   .item7:hover::before {
@@ -307,7 +289,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 99%;
+      height: 100%;
       border-radius: 5px;
       background: #7bd0c1;
       background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 100 100'><path d='M100 0 L0 100 ' stroke='white' stroke-width='0.1'/><path d='M0 0 L100 100 ' stroke='white' stroke-width='0.1'/></svg>");
@@ -315,7 +297,7 @@
       opacity: 0.8;
   }
   .item8:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
   }
 
   .item8:hover::before {
@@ -333,7 +315,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 99%;
+      height: 100%;
       border-radius: 5px;
       background: #f2849e;
       background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 100 100'><path d='M100 0 L0 100 ' stroke='white' stroke-width='0.1'/><path d='M0 0 L100 100 ' stroke='white' stroke-width='0.1'/></svg>");
@@ -341,7 +323,7 @@
       opacity: 0.8;
   }
   .item9:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
   }
 
   .item9:hover::before {
@@ -359,7 +341,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 99%;
+      height: 100%;
       border-radius: 5px;
       background: #ae85ca;
       background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 100 100'><path d='M100 0 L0 100 ' stroke='white' stroke-width='0.1'/><path d='M0 0 L100 100 ' stroke='white' stroke-width='0.1'/></svg>");
@@ -367,7 +349,7 @@
       opacity: 0.8;
   }
   .item10:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
   }
 
   .item10:hover::before {
@@ -385,7 +367,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 99%;
+      height: 100%;
       border-radius: 5px;
       background: #8499e7;
       background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 100 100'><path d='M100 0 L0 100 ' stroke='white' stroke-width='0.1'/><path d='M0 0 L100 100 ' stroke='white' stroke-width='0.1'/></svg>");
@@ -393,7 +375,7 @@
       opacity: 0.8;
   }
   .item11:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
   }
 
   .item11:hover::before {
@@ -411,7 +393,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 99%;
+      height: 100%;
       border-radius: 5px;
       background: #c75b9b;
       background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 100 100'><path d='M100 0 L0 100 ' stroke='white' stroke-width='0.1'/><path d='M0 0 L100 100 ' stroke='white' stroke-width='0.1'/></svg>");
@@ -419,7 +401,7 @@
       opacity: 0.8;
   }
   .item12:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
   }
 
   .item12:hover::before {
